@@ -39,13 +39,13 @@ https://grade-calculator-pnhc7csbdt4c2pk8zfhqmq.streamlit.app/
 
 ⚙️ Installation
 
-Clone Repository
+1] Clone Repository:
 
-git clone PASTE_YOUR_GITHUB_REPOSITORY_LINK_HERE
+https://github.com/meshramvanshika33-rgb/grade-calculator.git
 
-Go to Project Folder
+2] Navigate to the project directory:
 
-cd Grade_Calculator
+cd grade_calculator
 
 Install Requirements
 
@@ -53,12 +53,12 @@ pip install -r requirements.txt
 
 Run App
 
-streamlit run grade_calculator.py
+streamlit run app.py
 
 ---
 
 👩‍💻 Author
 
-Your Name
+Vanshika Meshram
 
-GitHub: PASTE_YOUR_GITHUB_PROFILE_LINK_HERE
+GitHub: 
