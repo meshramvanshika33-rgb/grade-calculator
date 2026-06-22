@@ -47,11 +47,11 @@ https://github.com/meshramvanshika33-rgb/grade-calculator.git
 
 cd grade_calculator
 
-3] Install Requirements
+3] Install Requirements:
 
 pip install -r requirements.txt
 
-4] Run App
+4] Run App:
 
 streamlit run app.py
 
