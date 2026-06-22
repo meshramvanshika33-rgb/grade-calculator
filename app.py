@@ -31,7 +31,7 @@ margin-bottom:20px;
 
 /* Glass Card */
 .card{
-background:rgba(255,255,255,0.55);
+background:rgba(255,255,255,0.60);
 backdrop-filter:blur(15px);
 padding:25px;
 border-radius:25px;
@@ -51,25 +51,26 @@ background:linear-gradient(
 135deg,
 #dff6ff,
 #ffc8dd);
-
 padding:25px;
 border-radius:20px;
 box-shadow:0px 8px 20px rgba(0,0,0,0.08);
 margin-top:20px;
 text-align:center;
+color:#000000;
 }
 
 /* Grade */
 .grade{
 font-size:35px;
 font-weight:bold;
-color:#0077b6;
+color:#000000;
 }
 
 /* Badge */
 .badge{
 font-size:22px;
 font-weight:bold;
+color:#000000;
 }
 
 /* Stars */
@@ -110,9 +111,7 @@ sub4 = st.number_input("📙 Subject 4", 0, 100)
 sub5 = st.number_input("📓 Subject 5", 0, 100)
 
 if st.button("💖 Calculate Grade"):
-
     total = sub1 + sub2 + sub3 + sub4 + sub5
-
     percentage = total / 5
 
     if percentage >= 90:
@@ -148,27 +147,27 @@ if st.button("💖 Calculate Grade"):
     st.markdown(f"""
     <div class="result">
 
-    <h2>👩‍🎓 {name}</h2>
+        <h2 style="color:#000000;">👩‍🎓 {name}</h2>
 
-    <p style="font-size:22px;font-weight:bold;">
-    📊 Total Marks : {total}/500
-    </p>
+        <p style="font-size:22px;font-weight:bold;color:#000000;">
+            📊 Total Marks : {total}/500
+        </p>
 
-    <p style="font-size:22px;font-weight:bold;">
-    🎯 Percentage : {percentage:.2f}%
-    </p>
+        <p style="font-size:22px;font-weight:bold;color:#000000;">
+            🎯 Percentage : {percentage:.2f}%
+        </p>
 
-    <div class="grade">
-    🎓 Grade : {grade}
-    </div>
+        <p style="font-size:35px;font-weight:bold;color:#000000;">
+            🎓 Grade : {grade}
+        </p>
 
-    <div class="badge">
-    {badge}
-    </div>
+        <p style="font-size:22px;font-weight:bold;color:#000000;">
+            {badge}
+        </p>
 
-    <div class="star">
-    {stars}
-    </div>
+        <p style="font-size:28px;">
+            {stars}
+        </p>
 
     </div>
     """, unsafe_allow_html=True)
